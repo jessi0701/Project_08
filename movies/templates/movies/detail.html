@@ -1,0 +1,10 @@
+{% extends 'movies/base.html' %}
+{% block bb %}
+    <h1>{{movie.title}}</h1>
+    <h2>{{movie.audience}}</h2>
+    <h3>{{movie.poster_url}}</h3>
+    <h4>{{movie.description}}</h4>
+    <h5>{{movie.genre}}</h5>
+    <a href="{% url 'movies:update' movie.id %}">수정</a>
+
+{% endblock %}
